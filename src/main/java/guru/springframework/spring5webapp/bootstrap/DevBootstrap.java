@@ -37,7 +37,6 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
         Author eric = new Author("Eric", "Evans");
 	    Publisher dddPublisher = new Publisher("Alexandros","Somewhere in Mexico");
         Book  ddd = new Book("Domain Driven Design", "1234", dddPublisher);
-
         eric.getBooks().add(ddd);
         ddd.getAuthors().add(eric);
 
